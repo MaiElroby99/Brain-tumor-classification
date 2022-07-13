@@ -2,7 +2,6 @@ import numpy as np
 from PIL import Image
 import tensorflow as tf
 from flask import jsonify
-import cv2
 
 def getPrediction(filename):
     
