@@ -81,7 +81,7 @@ def getPrediction(filename):
                 
         facts = 'Pituitary tumors are abnormal growths that develop in your pituitary gland.\
                             Most pituitary tumors are noncancerous (benign) growths that remain in your pituitary\
-                            gland or surrounding tissues.'
+                            gland or surrounding tissues'
                             
         # return prediction , facts 
         
