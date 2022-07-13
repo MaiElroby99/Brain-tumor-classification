@@ -20,7 +20,7 @@ def getPrediction(filename):
 
     SIZE = 150 #Resize to same size as training images
     img_path = 'static/images/'+filename
-    img = np.asarray(Image.open(img_path)).resize((SIZE,SIZE)))
+    img = np.asarray(Image.open(img_path).resize((SIZE,SIZE)))
 #   img = cv2.resize(img , (SIZE , SIZE))
     
     # img = img/255.      #Scale pixel values
