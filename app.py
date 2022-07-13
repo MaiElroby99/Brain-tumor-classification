@@ -27,12 +27,12 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 #Here, index function is with '/', our root directory. 
 #Running the app sends us to index.html.
 #Note that render_template means it looks for the file in the templates folder. 
-@app.route('/predict-tumor')
+@app.route('/')
 def index():
     return render_template('indexh.html')
 
 #Add Post method to the decorator to allow for form submission. 
-@app.route('/predict-tumor', methods=['POST' , 'GET'])
+@app.route('/', methods=['POST' , 'GET'])
 def submit_file():
     files = glob.glob('static/images/*')
     for f in files:
@@ -53,7 +53,7 @@ def submit_file():
             flash(facts)
             full_filename = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             flash(full_filename)
-            return redirect('/predict-tumor')
+            return redirect('/')
 
 
 if __name__ == "__main__":
