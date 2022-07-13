@@ -2,7 +2,7 @@ Flask==2.1.0
 numpy==1.22.3
 tensorflow-cpu
 Pillow==9.1.1
-gunicorn
+gunicorn==20.1.0
 Werkzeug==2.0.2
 protobuf==3.20
 glob2
