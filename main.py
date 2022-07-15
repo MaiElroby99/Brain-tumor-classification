@@ -14,10 +14,10 @@ def getPrediction(filename):
     
 
     #Load model
-    another_strategy = tf.distribute.MirroredStrategy()
-    with another_strategy.scope():
-        load_options = tf.saved_model.LoadOptions()
-    my_model=tf.keras.models.load_model("./effnet.h5" , options= load_options)
+#     another_strategy = tf.distribute.MirroredStrategy()
+#     with another_strategy.scope():
+#         load_options = tf.saved_model.LoadOptions()
+    my_model=tf.keras.models.load_model("model/effnet.h5")
 
 
     SIZE = 150 #Resize to same size as training images
